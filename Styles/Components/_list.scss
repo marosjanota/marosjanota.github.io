@@ -1,0 +1,18 @@
+ul {
+    li {
+     
+        
+    }
+
+    .dot {
+
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--color-font-light);
+            margin-right: var(--gap-xl);
+        }
+    }
+}

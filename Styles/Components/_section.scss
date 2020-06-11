@@ -1,0 +1,17 @@
+@import "../Base/Mixins/responsive";
+
+.section {
+    padding: var(--gap-xxl);
+
+    @include res-max-mobile {
+        padding: var(--gap-l);
+    }
+
+    &:nth-of-type(2n+0) {
+        background-color: var(--color-background-sec);
+    }
+
+    &--contact {
+        text-align: center;
+    }
+}

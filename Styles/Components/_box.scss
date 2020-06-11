@@ -1,0 +1,10 @@
+.box {
+    color: var(--color-font);
+    padding: var(--gap-xl) var(--gap-xxl);
+    border-radius: 3rem 0 3rem 0;
+
+    &--full {
+        background-color: var(--color-primary);
+        color: var(--color-font-light);
+    }
+}

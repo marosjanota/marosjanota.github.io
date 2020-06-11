@@ -1,0 +1,29 @@
+.status {
+    padding: var(--gap-xl) var(--gap-xxl);
+    text-align: center;
+    background-color: var(--color-primary);
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: var(--color-font-light);
+        vertical-align: middle;
+    }
+
+    &__state {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: var(--gap-l);
+
+        &.open {
+            background-color: green;
+        }
+
+        &.close {
+            background-color: red;
+        }
+    }
+}

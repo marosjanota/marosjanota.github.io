@@ -1,10 +1,24 @@
+@import "../Base/Mixins/responsive";
+
 .header {
     position: relative;
     width: 100%;
     min-height: 90vh;
     background-color: #eee;
+
+    h2 {
+        font-size: 1.7vw;
+        margin:var(--gap-l) 0;
+        color: var(--color-primary);
+        font-weight: 300;
+
+        @include res-max-tablet {
+            font-size: 2.4rem;
+            text-align: left;
+        }
+    }
     
-    &--photo {
+    &__photo {
         position: absolute;
         right: 0;
         top: 0;
@@ -18,7 +32,7 @@
         
     }
 
-    &--canvas {
+    &__canvas {
         position: absolute;
         top: 0;
         left: 0;
@@ -27,25 +41,35 @@
         z-index: 1;
     }
 
-    &--logo {
+    &__logo {
         position: absolute;
         top: 5rem;
         right: 10rem;
         width: 5rem;
         height: 10rem;
 
+        @include res-max-tablet() {
+            left: 5rem;
+        }
+
         svg {
             max-width: 100%;
             max-height: 100%;
-            fill: red;
+            fill: var(--color-primary);
         }
     }
 
-    &--text {
+    &__text {
         position: absolute;
         right: 10rem;
         top: 50%;
         transform: translate(0, -50%);
         text-align: right;
+
+        @include res-max-tablet {
+            text-align: left;
+            left: 5rem;
+            width: 50%;
+        }
     }
 }

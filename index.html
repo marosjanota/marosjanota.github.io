@@ -13,20 +13,88 @@
         <link rel="stylesheet" href="Styles/style.css">
         <script async="" src="Resources/bgCanvas.js"></script>
 
+        <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
         <div class="page">
             <header class="header">
-                <canvas id="bg-canvas" class="header--canvas" width="800" height="200"></canvas>
-                <div class="header--photo"></div>
-                <div class="header--logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 288"><defs><style>.a{fill:#1a263b;}</style></defs><polygon class="a" points="27 144 0 144 0 0 27 0 72 117.23 117 0 144 0 144 288 0 288 0 216 27 216 27 261 117 261 117 71 85.5 144 58.5 144 27 71.26 27 144"/></svg>
+                <canvas id="bg-canvas" class="header__canvas" width="800" height="200"></canvas>
+                <div class="header__photo"></div>
+                <div class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 288" >
+                        <polygon class="a" points="27 144 0 144 0 0 27 0 72 117.23 117 0 144 0 144 288 0 288 0 216 27 216 27 261 117 261 117 71 85.5 144 58.5 144 27 71.26 27 144"/>
+                    </svg>
                 </div>
-                <div class="header--text">
+                <div class="header__text">
                     <h1>Maroš Janota</h1>
                     <h2>Frontend kóder na voľnej nohe</h2>
                 </div>     
             </header>
+            
+            <div class="status">
+                <span class="status__state open"></span>
+                <span class="status__text">Momentálne prijímám nové zakázky alebo konzultácie</span>
+            </div>
+
+            <section class="section section--about">
+                <div class="flex flex__two-col">
+                    <div class="about">
+                        <div class="about__item">
+                            <h3>Kódovanie</h3>
+                            <p>HTML, CSS (SCSS), JS,</br>
+                            optimalizácia, dostupnosť, seo</p>
+                        </div>
+                        <div class="about__item">
+                            <h3>Rýchlosť webu</h3>
+                            <p>Analýza, optimalizácia a zrýchlenie načítania stránky</p>
+                        </div>
+                        <div class="about__item">
+                            <h3>Konzultácie a školenia</h3>
+                            <p>Architektúra projektu, optimalizácia,</p>
+                        </div>
+                        <div class="about__item">
+                            <h3>Ďalšie skúsenosti</h3>
+                            <p>SVG, NPM, Gulp, .NET, WPF, PWA</p>
+                        </div>
+                        <div class="about__item">
+                            <h3>UX/UI</h3>
+                            <p>Primárne konzultácie</p>
+                        </div>
+                    </div>
+                    <div class="box box--full">
+                        <h2>Niečo o mne</h3>
+                        <ul>
+                            <li><p class="dot">Mám rád nové výzvy</p></li>
+                            <li><p class="dot">Dodržiavam termíny</p></li>
+                            <li><p class="dot">Baví ma objavovať nové technológie</p></li>
+                            <li><p class="dot">Potrpím si na organizácii súborov</p></li>
+                            <li><p class="dot">Kód musí byť vždy čistý a prehľadný</p></li>
+                            <li><p><span class="text-big">5+</span> rokov skúsenosti</p></li>
+                            <li><p><span class="text-big">30+</span> dokončených projektov</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--contact">
+                <h2>Kontakt</h2>
+                <h3>V prípade záujmu o spoluprácu ma neváhajte kontaktovať.</h3>
+
+                <div class="contact">
+                    <p><a href="mailto:marosjanota@gmail.com">marosjanota@gmail.com</a></p>
+                    <p><a href="tel:+420608532167">+420 608 532 167</a></p>
+                    </br>
+                    <p>Bc. Maroš Janota</p>
+                    <p>IČ: 05449294</p>
+                    </br>
+                    <p>Nie som plátca DPH.</p>
+                </div>
+
+            </section>
+
+            <footer class="footer">
+                <p>&copy; Maroš Janota</p>
+            </footer>
         </div>
     </body>
 </html>
