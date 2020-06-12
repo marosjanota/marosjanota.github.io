@@ -12,7 +12,7 @@
         color: var(--color-primary);
         font-weight: 300;
 
-        @include res-max-tablet {
+        @include res-max-desktop-small {
             font-size: 2.4rem;
             text-align: left;
         }
@@ -24,12 +24,20 @@
         top: 0;
         bottom: 0;
         left: 0;
-        background-image: url("../Resources/photo2.jpg");
+        background-image: url("../Resources/me_big.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left center;
         opacity: 1;
-        
+
+        @include res-min-desktop-small {
+            background-image: url("../Resources/me_big.jpg");
+            background-position: left center;
+        }
+
+        @include res-max-desktop-small {
+            background-image: url("../Resources/me_small.jpg");
+            background-position: right center;
+        }
     }
 
     &__canvas {
@@ -48,7 +56,7 @@
         width: 5rem;
         height: 10rem;
 
-        @include res-max-tablet() {
+        @include res-max-desktop-small() {
             left: 5rem;
         }
 
@@ -66,7 +74,7 @@
         transform: translate(0, -50%);
         text-align: right;
 
-        @include res-max-tablet {
+        @include res-max-desktop-small {
             text-align: left;
             left: 5rem;
             width: 50%;
