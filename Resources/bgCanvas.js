@@ -66,7 +66,7 @@ function randomArrayItem(arr){
 function randomNumFrom(min, max){
     return Math.random()*(max - min) + min;
 }
-console.log(randomNumFrom(0, 10));
+
 // Random Ball
 function getRandomBall(){
     var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
@@ -236,26 +236,34 @@ function initCanvas(){
     can_h = parseInt(canvas.getAttribute('height'));
 }
 window.addEventListener('resize', function(e){
-    console.log('Window Resize...');
     initCanvas();
 });
 
-function goMovie(){
+function goMovie(balls){
     initCanvas();
-    initBalls(50);
+    initBalls(balls);
     window.requestAnimationFrame(render);
 }
-goMovie();
+
+function runCanvas() {
+    if(window.innerWidth < 680) {
+        goMovie(20);
+    } else if(window.innerWidth < 1281) {
+        goMovie(35);
+    } else {
+        goMovie(50);
+    }
+}
+
+window.onload = runCanvas;
 
 // Mouse effect
 canvas.addEventListener('mouseenter', function(){
-    console.log('mouseenter');
     mouse_in = true;
     balls.push(mouse_ball);
 });
 
 canvas.addEventListener('mouseleave', function(){
-    console.log('mouseleave');
     mouse_in = false;
     var new_balls = [];
     Array.prototype.forEach.call(balls, function(b){
