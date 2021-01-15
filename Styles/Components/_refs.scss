@@ -1,0 +1,17 @@
+.refs {
+    margin-top: var(--gap-xl);
+
+    &__item {
+        display: inline-block;
+        margin: var(--gap-xl);
+    }
+
+    svg, img {
+        height: 5rem;
+        vertical-align: middle;
+    }
+    
+    &--itixo {
+        transform: translate(0, -8px);
+    }
+}
