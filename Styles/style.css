@@ -186,6 +186,11 @@ ul .dot:before {
           transform: translate(0, -8px);
 }
 
+.refs--lucid {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
 .section {
   padding: var(--gap-xxl);
 }
