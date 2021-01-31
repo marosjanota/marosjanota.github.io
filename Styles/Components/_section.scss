@@ -17,4 +17,10 @@
         background-color: var(--color-primary);
         color: var(--color-font-light);
     }
+
+    &--me {
+        .box {
+            margin: var(--gap-xl)
+        }
+    }
 }

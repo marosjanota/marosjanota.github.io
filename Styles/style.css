@@ -1,5 +1,6 @@
 :root {
   --color-primary: #1B263B;
+  --color-primary_dark: #141c29;
   --color-secondary: #DA344D;
   --color-font: #000000;
   --color-font-light: #FFFFFF;
@@ -147,10 +148,20 @@ canvas {
   }
 }
 
+.d-ib {
+  display: inline-block;
+}
+
+.desc {
+  font-size: 14px;
+  font-style: italic;
+}
+
 .box {
   color: var(--color-font);
   padding: var(--gap-xl) var(--gap-xxl);
   border-radius: 3rem 0 3rem 0;
+  text-align: left;
 }
 
 .box--full {
@@ -158,13 +169,35 @@ canvas {
   color: var(--color-font-light);
 }
 
+.box--dark {
+  background-color: var(--color-primary_dark);
+}
+
+.card {
+  display: inline-block;
+  padding: var(--gap-xxl) var(--gap-xl);
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: var(--color-primary_dark);
+  -webkit-box-shadow: 0 4px 10px rgba(20, 28, 41, 0.8);
+          box-shadow: 0 4px 10px rgba(20, 28, 41, 0.8);
+  text-align: left;
+}
+
+ul .dot {
+  position: relative;
+  padding-left: calc(var(--gap-xl) + 1rem);
+}
+
 ul .dot:before {
   content: "";
+  position: absolute;
   display: inline-block;
+  top: 0.4rem;
+  left: 0;
   width: 1rem;
   height: 1rem;
   background-color: var(--color-font-light);
-  margin-right: var(--gap-xl);
 }
 
 .refs {
@@ -210,6 +243,10 @@ ul .dot:before {
   text-align: center;
   background-color: var(--color-primary);
   color: var(--color-font-light);
+}
+
+.section--me .box {
+  margin: var(--gap-xl);
 }
 
 .status {
