@@ -173,17 +173,6 @@ canvas {
   background-color: var(--color-primary_dark);
 }
 
-.card {
-  display: inline-block;
-  padding: var(--gap-xxl) var(--gap-xl);
-  border-radius: 10px;
-  font-size: 16px;
-  background-color: var(--color-primary_dark);
-  -webkit-box-shadow: 0 4px 10px rgba(20, 28, 41, 0.8);
-          box-shadow: 0 4px 10px rgba(20, 28, 41, 0.8);
-  text-align: left;
-}
-
 ul .dot {
   position: relative;
   padding-left: calc(var(--gap-xl) + 1rem);
