@@ -5,11 +5,7 @@
     text-align: left;
 
     &--full {
-        background-color: var(--color-primary);
+        background-color: var(--color-primary_dark);
         color: var(--color-font-light);
-    }
-
-    &--dark {
-        background-color: var(--color-primary_dark);        
     }
 }

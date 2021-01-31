@@ -165,12 +165,8 @@ canvas {
 }
 
 .box--full {
-  background-color: var(--color-primary);
-  color: var(--color-font-light);
-}
-
-.box--dark {
   background-color: var(--color-primary_dark);
+  color: var(--color-font-light);
 }
 
 ul .dot {
