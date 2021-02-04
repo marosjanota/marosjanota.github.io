@@ -8,4 +8,23 @@
         background-color: var(--color-primary_dark);
         color: var(--color-font-light);
     }
+
+    &--light {
+        color: var(--color-font-light);
+
+        a {
+            color: var(--color-font-light);
+        }
+    }
+
+    &--small {
+        text-align: center;
+    
+        @include res-min-tablet {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+    
+        }
+    }
 }

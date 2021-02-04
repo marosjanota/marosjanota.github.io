@@ -25,6 +25,9 @@ canvas {
         }
 
     }
+    &--wrap {
+        flex-wrap: wrap;
+    }
 }
 
 .d-ib {
@@ -34,4 +37,8 @@ canvas {
 .desc {
     font-size: 14px;
     font-style: italic;
+}
+
+.text-center {
+    text-align: center;
 }

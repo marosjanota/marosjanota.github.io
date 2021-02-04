@@ -23,4 +23,23 @@
             margin: var(--gap-xl)
         }
     }
+
+    &--blog {
+        p {
+            line-height: 1.6;
+        }
+    }
+}
+
+.img-csstips {
+    
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.link--blog {
+    display: block;
+    margin: var(--gap-xl) 0;
 }
