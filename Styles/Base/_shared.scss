@@ -42,3 +42,9 @@ canvas {
 .text-center {
     text-align: center;
 }
+
+.d-g {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: var(--gap-lg)
+}

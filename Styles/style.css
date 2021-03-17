@@ -157,6 +157,12 @@ canvas {
   text-align: center;
 }
 
+.d-g {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: var(--gap-lg);
+}
+
 .box {
   color: var(--color-font);
   padding: var(--gap-xl) var(--gap-xxl);
