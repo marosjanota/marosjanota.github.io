@@ -2,4 +2,4 @@ User-agent: *
 Disallow: 
 
 User-agent: *
-Disallow: /cv.html
+Disallow: /cv.html;
