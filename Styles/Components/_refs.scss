@@ -1,21 +1,26 @@
 .refs {
-    margin-top: var(--gap-xl);
+  margin-top: var(--gap-xl);
 
-    &__item {
-        display: inline-block;
-        margin: var(--gap-xl);
-    }
+  &__item {
+    display: inline-block;
+    margin: var(--gap-xl);
+  }
 
-    svg, img {
-        height: 5rem;
-        vertical-align: middle;
-    }
-    
-    &--itixo {
-        transform: translate(0, -8px);
-    }
+  svg,
+  img {
+    height: 5rem;
+    vertical-align: middle;
+  }
 
-    &--lucid {
-        transform: translate(0, -5px);
-    }
+  &--itixo {
+    transform: translate(0, -8px);
+  }
+
+  &--lucid {
+    transform: translate(0, -5px);
+  }
+
+  &--kuk {
+    transform: translate(0, -6px);
+  }
 }
